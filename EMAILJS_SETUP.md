@@ -61,9 +61,9 @@ You can reply directly to this email to respond to {{from_name}}.
 Create a `.env` file in the project root with these variables:
 
 ```env
-REACT_APP_EMAILJS_SERVICE_ID=your_service_id_here
-REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id_here
-REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key_here
+VITE_EMAILJS_SERVICE_ID=your_service_id_here
+VITE_EMAILJS_TEMPLATE_ID=your_template_id_here
+VITE_EMAILJS_PUBLIC_KEY=your_public_key_here
 ```
 
 ## 6. Test the Contact Form
