@@ -46,7 +46,7 @@ const Header = () => {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
+        <NavbarBrand className="flex items-center">
           <TreePine className="text-success mr-2" size={24} />
           <p className="font-bold text-inherit">Nikolai Beliaev</p>
         </NavbarBrand>
@@ -66,12 +66,13 @@ const Header = () => {
         ))}
       </NavbarContent>
 
-      <NavbarContent justify="end">
-        <NavbarItem>
+      <NavbarContent justify="end" className="navbar-content-end">
+        <NavbarItem className="flex items-center">
           <Switch
             defaultSelected={isDark}
             size="sm"
             color="primary"
+            className="switch-xs"
             thumbIcon={({ isSelected, className }) =>
               isSelected ? (
                 <Moon className={className} />
@@ -83,12 +84,14 @@ const Header = () => {
             aria-label="Toggle theme"
           />
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="flex items-center">
           <Button
             as={Link}
             color="primary"
             href="#contact"
             variant="flat"
+            size="sm"
+            className="button-slim"
             onPress={() => handleNavClick('#contact')}
           >
             Contact Me
