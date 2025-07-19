@@ -13,7 +13,7 @@ The contact form is now configured to send emails to `nikolai.l.beliaev@gmail.co
 2. Click "Add New Service"
 3. Choose your email provider (Gmail recommended)
 4. Follow the setup instructions to connect your email account
-5. Note down the **Service ID** (e.g., `service_abc123`)
+5. Note down the **Service ID** (service_8a7mdac)
 
 ## 3. Create Email Template
 1. Go to "Email Templates" in EmailJS dashboard
@@ -51,11 +51,11 @@ You can reply directly to this email to respond to {{from_name}}.
    - `to_name` - Recipient name (Nikolai Beliaev)
    - `to_email` - Recipient email (nikolai.l.beliaev@gmail.com)
 
-5. Note down the **Template ID** (e.g., `template_xyz789`)
+5. Note down the **Template ID** (template_f22aqls)
 
 ## 4. Get Public Key
 1. Go to "Account" → "General" in EmailJS dashboard
-2. Find your **Public Key** (e.g., `user_abcdef123456`)
+2. Find your **Public Key** (pODX2P6-vnARAp-Gq)
 
 ## 5. Environment Variables Setup
 Create a `.env` file in the project root with these variables:

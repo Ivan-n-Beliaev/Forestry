@@ -81,7 +81,7 @@ const HeroSection = () => {
                 <p className="text-base sm:text-lg text-default-500 mb-4">
                   {personalInfo.subtitle}
                 </p>
-                <p className="text-default-600 max-w-3xl mx-auto text-left sm:text-base leading-relaxed">
+                <p className="text-default-600 max-w-3xl mx-auto text-left sm:text-base leading-relaxed mb-3">
                   20+ years in wood sourcing, forest machinery, and sustainable operations.
                   Bridging traditional forestry with cutting-edge technologies across Russia and Northern Europe.
                 </p>
@@ -125,7 +125,7 @@ const HeroSection = () => {
                 </Button>
               </motion.div>
 
-              <motion.div variants={itemVariants} className="flex justify-center mt-2 mb1">
+              <motion.div variants={itemVariants} className="flex justify-center mt-1 mb-0">
                 <Button
                   isIconOnly
                   variant="light"
