@@ -100,7 +100,7 @@ const AboutSection = () => {
                     <div>
                       <h3 className="text-xl font-semibold">Professional Journey</h3>
                       <Badge color="primary" variant="flat">
-                        Global Forestry Expert
+                        International Forestry Expert
                       </Badge>
                     </div>
                   </div>

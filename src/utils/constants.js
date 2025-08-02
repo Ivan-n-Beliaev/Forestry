@@ -32,16 +32,16 @@ export const skills = [
 
 export const experience = [
   {
-    title: "Lecturer",
-    company: "St. Petersburg Forest Technical University",
-    period: "Dec 2024 - Present",
-    description: "Lecturing on Harvested Wood Inventory at the Institute of Technological Machines and Forest Transport"
-  },
-  {
     title: "Wood Procurement Consultant",
     company: "PE Beliaev",
     period: "Jan 2019 - Present",
     description: "Spearheading networking efforts in the Russian forestry sector, implementing Precision Forestry techniques"
+  },
+  {
+    title: "Lecturer",
+    company: "St. Petersburg Forest Technical University",
+    period: "Dec 2024 - Present",
+    description: "Lecturing on Harvested Wood Inventory at the Institute of Technological Machines and Forest Transport"
   },
   {
     title: "Representative",
