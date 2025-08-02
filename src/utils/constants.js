@@ -1,8 +1,8 @@
 // Portfolio data and constants for Nikolai Beliaev
 export const personalInfo = {
   name: "Nikolai Beliaev",
-  title: "Global Forestry Strategist",
-  subtitle: "PhD in Technical Sciences | Digital Transformation Advocate",
+  title: "Forestry Innovation Strategist",
+  subtitle: "PhD in Technical Sciences | ESG & Digital Transformation",
   location: "St Petersburg, Russia",
   email: "nikolai.l.beliaev@gmail.com",
   linkedin: "https://www.linkedin.com/in/nikolaibeliaev/",

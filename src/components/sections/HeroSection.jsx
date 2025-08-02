@@ -36,14 +36,8 @@ const HeroSection = () => {
     <section
       id="hero"
       ref={elementRef}
-      className="min-h-[calc(100vh-4rem)] flex items-start justify-center pt-8 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden"
+      className="min-h-[calc(100vh-3rem)] flex items-start justify-center pt-8 bg-gradient-to-br from-background via-background to-primary/5 relative overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-repeat" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}></div>
-      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -53,14 +47,14 @@ const HeroSection = () => {
           className="text-center"
         >
           <Card className="bg-background/80 backdrop-blur-md border border-divider shadow-2xl">
-            <CardBody className="p-8 sm:p-10 lg:p-12">
-              <motion.div variants={itemVariants} className="mb-6">
+            <CardBody className="py-6 px-8 sm:py-6 sm:px-10 lg:py-6 lg:px-12">
+              <motion.div variants={itemVariants} className="mb-6 pt-2">
                 <Avatar
                   src="/images/profile/nikolai-headshot-150.jpg"
                   alt={personalInfo.name}
-                  className="w-28 h-28 mx-auto mb-4 ring-4 ring-primary/20"
+                  className="w-60 h-60 mx-auto mb-2 ring-4 ring-primary/20"
                 />
-                <div className="flex justify-center mb-3">
+                {/* <div className="flex justify-center">
                   <Chip
                     color="success"
                     variant="flat"
@@ -68,10 +62,10 @@ const HeroSection = () => {
                   >
                     Available for Consulting
                   </Chip>
-                </div>
+                </div> */}
               </motion.div>
 
-              <motion.div variants={itemVariants} className="mb-6">
+              <motion.div variants={itemVariants} className="mb-4">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
                   <span className="gradient-text">{personalInfo.name}</span>
                 </h1>
@@ -89,10 +83,10 @@ const HeroSection = () => {
 
               <motion.div
                 variants={itemVariants}
-                className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+                className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6"
               >
                 <Button
-                  color="primary"
+                  color="secondary"
                   size="lg"
                   startContent={<Mail size={20} />}
                   onPress={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -133,7 +127,7 @@ const HeroSection = () => {
                   className="animate-bounce mx-auto"
                   aria-label="Scroll to about section"
                 >
-                  <ArrowDown size={24} />
+                  <ArrowDown size={22} />
                 </Button>
               </motion.div>
             </CardBody>
